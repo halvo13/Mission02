@@ -11,10 +11,16 @@ namespace Mission02
             
             int[] rollResults = new int[11];
 
-            Console.WriteLine("Welcome to the dice rolling simulator!");
-            Console.WriteLine("How many rolls would you like to simulate?");
+            Console.WriteLine("Welcome to the dice rolling simulator!\n");
+            Console.WriteLine("How many rolls would you like to simulate?\n");
 
             int numUserRoll = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("DICE ROLLING SIMULATION RESULTS");
+            Console.WriteLine("Each \"*\" represents 1% of the total number of rolls.");
+            Console.WriteLine("Total number of rolls = " + numUserRoll + ".\n");
+
+            
 
             //Roll the two dice, sum results, add results to array
             for (int i = 0; i < numUserRoll; i++)
@@ -42,6 +48,7 @@ namespace Mission02
                 }
                 Console.WriteLine("\n");
             } //End main For loop
+            Console.WriteLine("Thank you for using the dice throwing simulator.  Goodbye!");
 
         }
 
