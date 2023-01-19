@@ -40,11 +40,10 @@ namespace Mission02
                 int roundPercentRolls = Convert.ToInt32(Math.Round(percentRolls));
                 Console.Write((i + 2) + ": ");
 
-                int j = 0;
-                while (j < roundPercentRolls)
+                
+                for (int j = 0; j < roundPercentRolls; j++)
                 {
                     Console.Write("*");
-                    j++;
                 }
                 Console.WriteLine("\n");
             } //End main For loop
