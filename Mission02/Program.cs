@@ -32,14 +32,15 @@ namespace Mission02
                 double percentRolls = ((Convert.ToDouble(rollResults[i]) / Convert.ToDouble(numUserRoll)) * 100);
 
                 int roundPercentRolls = Convert.ToInt32(Math.Round(percentRolls));
-                Console.WriteLine((i + 2) + ": ");
+                Console.Write((i + 2) + ": ");
 
                 int j = 0;
                 while (j < roundPercentRolls)
                 {
-                    Console.WriteLine("*");
+                    Console.Write("*");
                     j++;
                 }
+                Console.WriteLine("\n");
             } //End main For loop
 
         }
