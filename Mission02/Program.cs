@@ -11,8 +11,10 @@ namespace Mission02
             
             int[] rollResults = new int[11];
 
+
+            //Welcome Screen
             Console.WriteLine("Welcome to the dice rolling simulator!\n");
-            Console.WriteLine("How many rolls would you like to simulate?\n");
+            Console.Write("How many rolls would you like to simulate? ");
 
             int numUserRoll = Convert.ToInt32(Console.ReadLine());
 
